@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333b34;
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(15, 39, 29, 0.72), rgba(15, 39, 29, 0.72)),
+        url("https://images.unsplash.com/photo-1570172619644-dfd03ed5d881")
+        center/cover fixed;
+}
+
+.cabecalho {
+    background-color: #18392c;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.marca {
+    color: #c5a46d;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.marca span {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #c5a46d;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 45px 20px;
+}
+
+.formulario {
+    background-color: #f6efe4;
+    width: 100%;
+    max-width: 650px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.subtitulo {
+    color: #a3834d;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+h1 {
+    color: #18392c;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.descricao {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    flex: 1;
+}
+
+.campo label {
+    color: #18392c;
+    font-weight: bold;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.campo input {
+    padding: 13px;
+    border: 1px solid #c9bea9;
+    border-radius: 6px;
+    background: #fffdf9;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+}
+
+.campo input:focus {
+    border-color: #a3834d;
+    box-shadow: 0 0 0 2px rgba(197, 164, 109, 0.2);
+}
+
+.linha {
+    display: flex;
+    gap: 15px;
+}
+
+#mensagemCep {
+    margin-top: 5px;
+    color: #8b3d32;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #18392c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #315442;
+}
+
+.voltar {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.voltar a {
+    color: #876b3e;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #18392c;
+    color: #f6efe4;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .formulario {
+        padding: 25px 18px;
+    }
+
+    .linha {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}

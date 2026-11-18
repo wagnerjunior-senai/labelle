@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="La Belle Vanity Clinic: estética premium, beleza, bem-estar e autocuidado com sofisticação e atenção personalizada.">
+
+    <title>La Belle Vanity Clinic | O luxo de ser você</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html" class="identidade" aria-label="La Belle Vanity Clinic - Início">
+            <img src="logo.png" alt="Logo La Belle Vanity Clinic" class="logo">
+            <div class="marca">
+                LA BELLE
+                <span>VANITY CLINIC</span>
+            </div>
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="menu-principal">
+            ☰
+        </button>
+
+        <nav id="menu-principal" class="menu-principal">
+            <a href="agendamento.html">Agende sua experiência</a>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">A clínica</a>
+            <a href="#tratamentos">Tratamentos</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="#quiz">✨ Faça seu Quiz</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-conteudo">
+                <span class="etiqueta">Beleza • Bem-estar • Exclusividade</span>
+
+                <h1>O luxo de ser você.</h1>
+
+                <p>
+                    Descubra uma nova experiência de autocuidado,
+                    onde sofisticação, tecnologia e valorização
+                    da sua beleza caminham juntas.
+                </p>
+
+                <a href="#tratamentos" class="botao">
+                    Conheça nossos tratamentos
+                </a>
+            </div>
+        </section>
+
+        <section class="secao" id="sobre">
+            <div class="sobre">
+                <img
+                    src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1000&q=85"
+                    alt="Ambiente de spa para relaxamento e autocuidado"
+                    loading="lazy">
+
+                <div class="sobre-conteudo">
+                    <span class="etiqueta">Sua beleza, nossa inspiração</span>
+
+                    <h2>Um momento só seu.</h2>
+
+                    <p>
+                        A La Belle Vanity Clinic nasceu para transformar
+                        o cuidado pessoal em uma experiência especial,
+                        com acolhimento, elegância e atenção aos detalhes.
+                    </p>
+
+                    <p>
+                        Nosso propósito é valorizar a beleza individual
+                        por meio de cuidados personalizados, bem-estar
+                        e tecnologias estéticas adequadas.
+                    </p>
+
+                    <a href="htmlChatLaBelleVanityClinic.html">Atendimento</a>
+                        Conheça nossa história →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao tratamentos" id="tratamentos">
+           
+<section class="secao tratamentos" id="tratamentos">
+    <div class="titulo-secao">
+        <span class="etiqueta">Cuidado em cada detalhe</span>
+        <h2>Nossos tratamentos</h2>
+        <p>
+            Clique em um tratamento para conhecer sua finalidade
+            e descobrir mais sobre nossos cuidados.
+        </p>
+    </div>
+
+    <div class="cartoes">
+        <article class="cartao">
+            <img
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+                alt="Cuidado estético facial"
+                loading="lazy">
+
+            <div class="cartao-conteudo">
+                <h3>Estética facial</h3>
+                <p>
+                    Cuidados personalizados para as necessidades
+                    da pele do rosto.
+                </p>
+                <button
+                    class="botao-tratamento"
+                    type="button"
+                    data-tratamento="facial">
+                    Saiba mais →
+                </button>
+            </div>
+        </article>
+
+        <article class="cartao">
+            <img
+                src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80"
+                alt="Ambiente de relaxamento e cuidados corporais"
+                loading="lazy">
+
+            <div class="cartao-conteudo">
+                <h3>Estética corporal</h3>
+                <p>
+                    Cuidados que valorizam o bem-estar e as
+                    necessidades individuais do corpo.
+                </p>
+                <button
+                    class="botao-tratamento"
+                    type="button"
+                    data-tratamento="corporal">
+                    Saiba mais →
+                </button>
+            </div>
+        </article>
+
+        <article class="cartao">
+            <img
+                src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80"
+                alt="Produtos para cuidados com a pele"
+                loading="lazy">
+
+            <div class="cartao-conteudo">
+                <h3>Skincare e limpeza de pele</h3>
+                <p>
+                    Cuidados para manter a pele limpa, hidratada
+                    e com aparência saudável.
+                </p>
+                <button
+                    class="botao-tratamento"
+                    type="button"
+                    data-tratamento="skincare">
+                    Saiba mais →
+                </button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Janela de informações sobre os tratamentos -->
+<div
+    class="modal-tratamento"
+    id="modal-tratamento"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-titulo"
+    aria-describedby="modal-descricao"
+    hidden>
+
+    <div class="modal-conteudo">
+        <button
+            class="modal-fechar"
+            id="modal-fechar"
+            type="button"
+            aria-label="Fechar janela">
+            &times;
+        </button>
+
+        <span class="etiqueta">LA BELLE VANITY CLINIC</span>
+        <h2 id="modal-titulo">Conheça o tratamento</h2>
+        <p id="modal-descricao"></p>
+
+        <p class="modal-aviso">
+            A indicação depende das necessidades de cada pessoa
+            e de uma avaliação profissional.
+        </p>
+    </div>
+</div>
+
+        </section>
+
+<!-- QUIZ INTERATIVO LA BELLE -->
+<section class="secao quiz-autocuidado" id="quiz">
+    <div class="quiz-caixa">
+        <span class="quiz-etiqueta">✨ Um momento só seu ✨</span>
+
+        <h2>Descubra seu Momento La Belle</h2>
+
+        <p class="quiz-introducao">
+            Responda a três perguntinhas e descubra qual estilo
+            de autocuidado combina com você hoje!
+        </p>
+
+        <form id="quiz-form">
+            <fieldset class="quiz-pergunta">
+                <legend>1. O que você mais gostaria de fazer hoje?</legend>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz1" value="facial" required>
+                    <span>🌸 Cuidar da pele do meu rosto</span>
+                </label>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz1" value="relax">
+                    <span>🕯️ Relaxar e desacelerar</span>
+                </label>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz1" value="corporal">
+                    <span>✨ Dedicar atenção ao meu corpo</span>
+                </label>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz1" value="rotina">
+                    <span>💧 Criar uma rotina de skincare</span>
+                </label>
+            </fieldset>
+
+            <fieldset class="quiz-pergunta">
+                <legend>2. Qual dessas opções combina mais com você?</legend>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz2" value="facial" required>
+                    <span>🌷 Adoro descobrir cuidados para a pele</span>
+                </label>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz2" value="relax">
+                    <span>☁️ Amo momentos tranquilos e relaxantes</span>
+                </label>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz2" value="corporal">
+                    <span>🌿 Gosto de cuidar de mim por inteiro</span>
+                </label>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz2" value="rotina">
+                    <span>🧴 Gosto de produtos e rotinas de beleza</span>
+                </label>
+            </fieldset>
+
+            <fieldset class="quiz-pergunta">
+                <legend>3. Como você gostaria de terminar seu dia?</legend>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz3" value="facial" required>
+                    <span>✨ Com a pele recebendo atenção especial</span>
+                </label>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz3" value="relax">
+                    <span>🛁 Leve, tranquila e renovada</span>
+                </label>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz3" value="corporal">
+                    <span>💚 Tendo dedicado um tempo ao meu corpo</span>
+                </label>
+
+                <label class="quiz-opcao">
+                    <input type="radio" name="quiz3" value="rotina">
+                    <span>🌟 Com novos hábitos de autocuidado</span>
+                </label>
+            </fieldset>
+
+            <button type="submit" class="quiz-botao">
+                Descobrir meu resultado ✨
+            </button>
+        </form>
+
+        <div
+            id="quiz-resultado"
+            class="quiz-resultado"
+            role="status"
+            aria-live="polite"
+            tabindex="-1"
+            hidden>
+            <span class="quiz-resultado-icone" aria-hidden="true">💖</span>
+            <h3 id="quiz-resultado-titulo"></h3>
+            <p id="quiz-resultado-texto"></p>
+            <button type="button" id="quiz-refazer" class="quiz-refazer">
+                Fazer novamente ↻
+            </button>
+        </div>
+
+        <p class="quiz-observacao">
+            Este quiz é uma experiência de entretenimento e autocuidado.
+            O resultado não substitui uma avaliação profissional.
+        </p>
+    </div>
+</section>
+
+        <section class="secao diferenciais">
+            <div class="titulo-secao">
+                <span class="etiqueta">A essência da nossa marca</span>
+                <h2>Mais que estética, uma experiência.</h2>
+                <p>
+                    Acreditamos que cada pessoa merece ser cuidada
+                    com atenção, respeito e excelência.
+                    Nossa proposta une sofisticação, inovação
+                    e valorização da beleza natural.
+                </p>
+            </div>
+
+            <div class="valores">
+                <article class="valor">
+                    <h3>Sofisticação</h3>
+                    <p>Elegância e cuidado em cada detalhe.</p>
+                </article>
+
+                <article class="valor">
+                    <h3>Inovação</h3>
+                    <p>Tecnologia e atualização constante.</p>
+                </article>
+
+                <article class="valor">
+                    <h3>Personalização</h3>
+                    <p>Respeito à individualidade de cada cliente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao contato">
+            <span class="etiqueta">Sua melhor versão começa com cuidado</span>
+            <h2>Você merece esse momento.</h2>
+            <p>
+                Explore nossa proposta e conheça mais sobre
+                a La Belle Vanity Clinic.
+            </p>
+            <a href="sobre.html" class="botao">Conheça nossa clínica</a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p><strong>LA BELLE VANITY CLINIC</strong></p>
+        <p>O luxo de ser você.</p>
+        <p>Desenvolvido por Angelina</p>
+        <p>
+            <a href="mailto:angelina.r.santos@edu.senai.br">
+                angelina.r.santos@edu.senai.br
+            </a>
+        </p>
+        <p>&copy; 2026 La Belle Vanity Clinic. Todos os direitos reservados.</p>
+    </footer>
+
+<button
+    id="voltar-topo"
+    type="button"
+    aria-label="Voltar ao início da página"
+    title="Voltar ao início">
+    ↑ Início
+</button>
+
+
+<a href="htmlChatLaBelleVanityClinic.html"
+   class="botao-belle"
+   aria-label="Conversar com a Belle Bot"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <span class="icone-belle">✧</span>
+    <span>Fale com a Belle Bot</span>
+
+</a>
+
+</body>
+</html>

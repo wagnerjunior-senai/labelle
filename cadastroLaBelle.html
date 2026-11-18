@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | La Belle Vanity Clinic</title>
+    <link rel="stylesheet" href="styleLaBelle.css">
+    <script src="scriptLaBelle.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html" class="marca">LA BELLE <span>VANITY CLINIC</span></a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="cadastroLaBelle.html">Cadastro</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="formulario">
+            <p class="subtitulo">SEU MOMENTO DE AUTOCUIDADO</p>
+            <h1>Cadastro de Cliente</h1>
+            <p class="descricao">
+                Preencha seus dados para fazer parte da experiência
+                La Belle Vanity Clinic.
+            </p>
+
+            <form id="formCadastro">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome"
+                           placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep"
+                           placeholder="00000-000" maxlength="9" required>
+                    <small id="mensagemCep"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" name="rua"
+                           placeholder="Nome da rua" required>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero" name="numero"
+                               placeholder="Nº" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" name="bairro"
+                               placeholder="Bairro" required>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade"
+                               placeholder="Cidade" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado"
+                               placeholder="UF" maxlength="2" required>
+                    </div>
+                </div>
+
+                <button type="submit">Finalizar cadastro</button>
+            </form>
+
+            <p class="voltar">
+                Já conhece nossa clínica?
+                <a href="sobre.html">Conheça nossa história</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>La Belle Vanity Clinic | O luxo de ser você.</p>
+        <p>Desenvolvido por Angelina | SENAI</p>
+    </footer>
+
+<a href="htmlChatLaBelleVanityClinic.html"
+   class="botao-belle"
+   aria-label="Conversar com a Belle Bot"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <span class="icone-belle">✧</span>
+    <span>Fale com a Belle Bot</span>
+
+</a>
+
+</body>
+</html>

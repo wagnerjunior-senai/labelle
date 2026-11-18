@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento | La Belle Vanity Clinic</title>
+    <link rel="stylesheet" href="agendamento.css">
+    <script src="agendamento.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <h1>La Belle Vanity Clinic</h1>
+        <p class="subtitulo">Agende sua experiência de beleza e autocuidado.</p>
+
+        <form id="formAgendamento">
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" required placeholder="Digite seu nome">
+
+            <label for="whatsapp">Seu WhatsApp</label>
+            <input type="tel" id="whatsapp" required placeholder="(11) 99999-9999">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required placeholder="seu@email.com">
+
+            <label for="experiencia">Experiência desejada</label>
+            <select id="experiencia" required>
+                <option value="">Selecione uma experiência</option>
+                <option>Limpeza de pele</option>
+                <option>Skincare personalizado</option>
+                <option>Tratamento facial</option>
+                <option>Tratamento corporal</option>
+                <option>Experiência de relaxamento</option>
+                <option>Avaliação estética</option>
+            </select>
+
+            <label for="data">Data desejada</label>
+            <input type="date" id="data" required>
+
+            <label for="horario">Horário desejado</label>
+            <select id="horario" required>
+                <option value="">Selecione um horário</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+            </select>
+
+            <button type="submit">Solicitar agendamento</button>
+        </form>
+
+        <div id="mensagem" role="status"></div>
+
+        <a href="index.html" class="voltar">Voltar ao início</a>
+    </main>
+
+</body>
+</html>

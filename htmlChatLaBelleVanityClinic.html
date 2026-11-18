@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belle Bot | La Belle Vanity Clinic</title>
+    <link rel="stylesheet" href="styleChatBotLaBelleVanityClinic.css">
+    <script src="scriptChatLaBelleVanityClinic.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            LA BELLE
+            <span>VANITY CLINIC</span>
+        </a>
+        <a href="sobre.html" class="link-voltar">Sobre nós</a>
+    </header>
+
+    <main class="container">
+        <section class="chat-card">
+            <div class="chat-topo">
+                <div class="icone">✧</div>
+                <p class="identificacao">LA BELLE VANITY CLINIC</p>
+                <h1>Belle Bot</h1>
+                <p class="descricao">
+                    Sua assistente virtual de estética e autocuidado.
+                </p>
+                <span class="status">● Online para atender você</span>
+            </div>
+
+            <div class="conteudo">
+                <label for="apiKey">Sua chave da API OpenAI</label>
+                <input
+                    type="password"
+                    id="apiKey"
+                    placeholder="Cole sua chave de API aqui"
+                    autocomplete="off"
+                >
+
+                <div class="aviso">
+                    Não compartilhe sua chave de API. Use apenas para testes
+                    locais e não publique esta página com a chave.
+                </div>
+
+                <div id="conversa" class="conversa" aria-live="polite">
+                    <div class="mensagem bot">
+                        Olá! ✨ Sou a Belle Bot, assistente da La Belle Vanity
+                        Clinic. Como posso ajudar com sua experiência de
+                        estética e autocuidado?
+                    </div>
+                </div>
+
+                <label for="mensagem">Digite sua mensagem</label>
+                <textarea
+                    id="mensagem"
+                    rows="3"
+                    placeholder="Escreva sua dúvida sobre estética..."
+                ></textarea>
+
+                <button id="btnEnviar" type="button">
+                    Enviar mensagem ✨
+                </button>
+
+                <p id="status" role="status"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>La Belle Vanity Clinic | O luxo de ser você.</p>
+        <p>Desenvolvido por Angelina | SENAI</p>
+    </footer>
+
+</body>
+</html>
